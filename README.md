@@ -4,7 +4,7 @@ Install apache2 by using apt command:
 <pre>
 $ sudo apt install apache2
 </pre>
-Add the certbot in order to generate SSL three certificates (cert.pem, privkey.pem, chain.pem)
+Activate certbot in order to generate SSL three certificates (cert.pem, privkey.pem, chain.pem)
 <pre>
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt update
