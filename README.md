@@ -16,7 +16,7 @@ Run the following command to generate SSL three certificates where yt.dob.jp is 
 $ sudo certbot certonly --webroot -w /var/www/html -d yt.dob.jp
 </pre>
 SSL three certificates (cert.pem, privkey.pem, chain.pem) will be generated at /etc/letsencrypt/live/yt.dob.jp/ folder. 
-Therefore, we must make sure that /etc/apache2/sites-available/default-ssl.conf file must be modified or added:
+Therefore, we must make sure that /etc/apache2/sites-available/default-ssl.conf file must be modified or added as follows:
 <pre>
 SSLCertificateFile      /etc/letsencrypt/live/yt.dob.jp/cert.pem
 SSLCertificateKeyFile   /etc/letsencrypt/live/yt.dob.jp/privkey.pem
